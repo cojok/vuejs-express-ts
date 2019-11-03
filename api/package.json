@@ -1,0 +1,33 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "dev:start": "npm build && npm run start",
+    "dev": "nodemon --watch src -e ts --exec npm run dev:start",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "dynamodb-data-types": "^3.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.11.7",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
