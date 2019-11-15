@@ -17,7 +17,7 @@ const routes = [
     component: Car,
     props: route => {
       return {
-        id: route.params.id
+        id: parseInt(route.params.id)
       }
     }
   }

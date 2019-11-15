@@ -7,20 +7,10 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Check the public folder for config js in order to change api url
+### Copy .env.dist into .env and fill in the parameters
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

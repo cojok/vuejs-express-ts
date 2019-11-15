@@ -8,7 +8,7 @@ import store from './store'
 Vue.config.productionTip = false
 
 const instance = axios.create({
-  baseURL: 'http://localhost:3250'
+  baseURL: window.APP_CONFIG.API_URL
 })
 
 Vuex.Store.prototype.$http = instance
